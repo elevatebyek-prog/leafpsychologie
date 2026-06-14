@@ -1,0 +1,7 @@
+# Dev-/bronbestanden — niet nodig voor de live site
+.thumbnail
+support.js
+*.dc.html
+downloads/
+screenshots/
+uploads/
