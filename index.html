@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- SEO -->
-  <title>Leaf Psychologie — Praktijk voor Psychologie in Amsterdam | Binnenkort online</title>
-  <meta name="description" content="Leaf Psychologie is een nieuwe praktijk voor psychologie in Amsterdam. Een rustige plek om te landen, te ademen en weer verbinding te maken met jezelf. Binnenkort online.">
+  <title>Leaf Psychologie — Online praktijk voor Psychologie | Binnenkort online</title>
+  <meta name="description" content="Leaf Psychologie is een nieuwe online praktijk voor psychologie, op afspraak. Een rustige plek om te landen, te ademen en weer verbinding te maken met jezelf. Binnenkort online.">
   <meta name="robots" content="index, follow">
   <meta name="author" content="Leaf Psychologie">
   <meta name="theme-color" content="#EFE8DA">
@@ -15,13 +15,13 @@
   <!-- Open Graph / social -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Leaf Psychologie">
-  <meta property="og:title" content="Leaf Psychologie — Praktijk voor Psychologie in Amsterdam">
+  <meta property="og:title" content="Leaf Psychologie — Online praktijk voor Psychologie">
   <meta property="og:description" content="Een rustige plek om te landen, te ademen en weer verbinding te maken met jezelf. De praktijk opent binnenkort haar deuren.">
   <meta property="og:url" content="https://leafpsychologie.nl/">
   <meta property="og:locale" content="nl_NL">
   <meta property="og:image" content="https://leafpsychologie.nl/favicon.svg">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Leaf Psychologie — Praktijk voor Psychologie in Amsterdam">
+  <meta name="twitter:title" content="Leaf Psychologie — Online praktijk voor Psychologie">
   <meta name="twitter:description" content="Een rustige plek om te landen, te ademen en weer verbinding te maken met jezelf. De praktijk opent binnenkort haar deuren.">
 
   <!-- Favicon (afgeleid van het Leaf-logo) -->
@@ -39,16 +39,12 @@
     "@context": "https://schema.org",
     "@type": "Psychologist",
     "name": "Leaf Psychologie",
-    "description": "Praktijk voor psychologie in Amsterdam. Een rustige plek om te landen, te ademen en weer verbinding te maken met jezelf.",
+    "description": "Online praktijk voor psychologie, op afspraak. Een rustige plek om te landen, te ademen en weer verbinding te maken met jezelf.",
     "url": "https://leafpsychologie.nl/",
     "email": "hallo@leafpsychologie.nl",
     "image": "https://leafpsychologie.nl/favicon.svg",
-    "areaServed": "Amsterdam",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Amsterdam",
-      "addressCountry": "NL"
-    }
+    "areaServed": "Nederland",
+    "availableLanguage": "nl"
   }
   </script>
 
@@ -184,6 +180,42 @@
       color:#A2977F;
     }
 
+    /* bloei-effect bij het openen van de pagina */
+    @keyframes bloomIn{
+      0%{ opacity:0; transform:translateY(10px) scale(0.97); filter:blur(6px); }
+      100%{ opacity:1; transform:translateY(0) scale(1); filter:blur(0); }
+    }
+    @keyframes bloomName{
+      0%{ opacity:0; transform:scale(0.78); filter:blur(16px); letter-spacing:0.2em; }
+      55%{ opacity:1; }
+      100%{ opacity:1; transform:scale(1); filter:blur(0); letter-spacing:0.02em; }
+    }
+    @keyframes lineGrow{
+      from{ transform:scaleX(0); }
+      to{ transform:scaleX(1); }
+    }
+
+    .topbar{ animation:bloomIn 1s ease-out 0.1s both; }
+    .eyebrow{ animation:bloomIn 1.1s ease-out 0.35s both; }
+    .wordmark__name{
+      transform-origin:center bottom;
+      animation:bloomName 1.7s cubic-bezier(0.2,0.7,0.2,1) 0.5s both;
+    }
+    .wordmark__sub span{ animation:bloomIn 1s ease-out 1.05s both; }
+    .wordmark__sub::before,
+    .wordmark__sub::after{
+      transform-origin:center;
+      animation:lineGrow 0.9s ease-out 1.15s both;
+    }
+    .footer{ animation:bloomIn 1.2s ease-out 1.35s both; }
+
+    @media (prefers-reduced-motion: reduce){
+      .topbar, .eyebrow, .wordmark__name, .wordmark__sub span,
+      .wordmark__sub::before, .wordmark__sub::after, .footer{
+        animation:none;
+      }
+    }
+
     /* mobile-first refinements */
     @media (max-width:640px){
       .brand-tag{ display:none; }
@@ -219,7 +251,7 @@
     <footer class="footer">
       <a href="mailto:hallo@leafpsychologie.nl">hallo@leafpsychologie.nl</a>
       <span class="footer__quote">Een veilige plek om stil te staan en te groeien.</span>
-      <span class="footer__meta">Amsterdam&nbsp;&nbsp;·&nbsp;&nbsp;op afspraak</span>
+      <span class="footer__meta">Online&nbsp;&nbsp;·&nbsp;&nbsp;op afspraak</span>
     </footer>
 
   </main>
