@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://leafpsychologie.nl/sitemap.xml

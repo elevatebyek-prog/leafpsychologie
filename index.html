@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- SEO -->
+  <title>Leaf Psychologie — Praktijk voor Psychologie in Amsterdam | Binnenkort online</title>
+  <meta name="description" content="Leaf Psychologie is een nieuwe praktijk voor psychologie in Amsterdam. Een rustige plek om te landen, te ademen en weer verbinding te maken met jezelf. Binnenkort online.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Leaf Psychologie">
+  <meta name="theme-color" content="#EFE8DA">
+  <link rel="canonical" href="https://leafpsychologie.nl/">
+
+  <!-- Open Graph / social -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Leaf Psychologie">
+  <meta property="og:title" content="Leaf Psychologie — Praktijk voor Psychologie in Amsterdam">
+  <meta property="og:description" content="Een rustige plek om te landen, te ademen en weer verbinding te maken met jezelf. De praktijk opent binnenkort haar deuren.">
+  <meta property="og:url" content="https://leafpsychologie.nl/">
+  <meta property="og:locale" content="nl_NL">
+  <meta property="og:image" content="https://leafpsychologie.nl/favicon.svg">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Leaf Psychologie — Praktijk voor Psychologie in Amsterdam">
+  <meta name="twitter:description" content="Een rustige plek om te landen, te ademen en weer verbinding te maken met jezelf. De praktijk opent binnenkort haar deuren.">
+
+  <!-- Favicon (afgeleid van het Leaf-logo) -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" href="/favicon.svg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,18..72,200;0,18..72,300;0,18..72,400;1,18..72,300&family=Tenor+Sans&display=swap" rel="stylesheet">
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Psychologist",
+    "name": "Leaf Psychologie",
+    "description": "Praktijk voor psychologie in Amsterdam. Een rustige plek om te landen, te ademen en weer verbinding te maken met jezelf.",
+    "url": "https://leafpsychologie.nl/",
+    "email": "hallo@leafpsychologie.nl",
+    "image": "https://leafpsychologie.nl/favicon.svg",
+    "areaServed": "Amsterdam",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Amsterdam",
+      "addressCountry": "NL"
+    }
+  }
+  </script>
+
+  <style>
+    *{ box-sizing:border-box; margin:0; padding:0; }
+    html{ -webkit-text-size-adjust:100%; }
+    body{
+      background:#EFE8DA;
+      font-family:'Tenor Sans', sans-serif;
+      color:#6B6151;
+      -webkit-font-smoothing:antialiased;
+      overflow-x:hidden;
+    }
+
+    .page{
+      min-height:100vh;
+      min-height:100svh;
+      background:radial-gradient(120% 90% at 50% 8%, #F6F0E4 0%, #EFE8DA 52%, #E7DECD 100%);
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:space-between;
+      gap:48px;
+      padding:clamp(28px, 6vw, 48px) clamp(22px, 6vw, 32px) clamp(28px, 5vw, 40px);
+    }
+
+    /* top bar */
+    .topbar{
+      width:100%;
+      max-width:1080px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+    }
+    .brand-label{
+      font-size:12px;
+      letter-spacing:0.4em;
+      text-transform:uppercase;
+      color:#9C917E;
+    }
+    .brand-tag{
+      font-size:12px;
+      letter-spacing:0.3em;
+      text-transform:uppercase;
+      color:#B0A48F;
+    }
+
+    /* center */
+    .hero{
+      width:100%;
+      max-width:720px;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      text-align:center;
+      gap:clamp(28px, 5vw, 40px);
+    }
+    .eyebrow{
+      font-size:clamp(11px, 3vw, 12px);
+      letter-spacing:0.55em;
+      text-transform:uppercase;
+      color:#A99E8B;
+      padding-left:0.55em;
+    }
+
+    .wordmark{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      gap:clamp(18px, 3.5vw, 26px);
+    }
+    .wordmark__name{
+      font-family:'Newsreader', serif;
+      font-weight:200;
+      font-size:clamp(62px, 17vw, 124px);
+      letter-spacing:0.02em;
+      color:#766C5B;
+      line-height:0.84;
+    }
+    .wordmark__name span{ color:#D79A9B; }
+    .wordmark__sub{
+      display:flex;
+      align-items:center;
+      gap:clamp(12px, 3vw, 18px);
+    }
+    .wordmark__sub::before,
+    .wordmark__sub::after{
+      content:"";
+      width:clamp(34px, 9vw, 54px);
+      height:1px;
+      background:rgba(123,113,96,0.3);
+    }
+    .wordmark__sub span{
+      font-size:clamp(12px, 3vw, 14px);
+      letter-spacing:0.55em;
+      text-transform:uppercase;
+      color:#A2977F;
+      padding-left:0.55em;
+    }
+
+    .intro{
+      font-family:'Newsreader', serif;
+      font-weight:300;
+      font-size:clamp(19px, 5vw, 25px);
+      line-height:1.6;
+      color:#7E7363;
+      width:100%;
+      max-width:540px;
+      text-wrap:pretty;
+    }
+
+    /* footer */
+    .footer{
+      width:100%;
+      max-width:1080px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:clamp(14px, 3vw, 24px);
+      flex-wrap:wrap;
+      border-top:1px solid rgba(107,97,81,0.16);
+      padding-top:clamp(20px, 4vw, 26px);
+    }
+    .footer a{
+      font-size:12px;
+      letter-spacing:0.06em;
+      color:#A2977F;
+      text-decoration:none;
+      transition:color 0.3s ease;
+    }
+    .footer a:hover{ color:#8C9B79; }
+    .footer__quote{
+      font-family:'Newsreader', serif;
+      font-style:italic;
+      font-weight:300;
+      font-size:clamp(14px, 3.6vw, 16px);
+      color:#9A8F7D;
+      text-align:center;
+    }
+    .footer__meta{
+      font-size:12px;
+      letter-spacing:0.06em;
+      color:#A2977F;
+    }
+
+    /* mobile-first refinements */
+    @media (max-width:640px){
+      .brand-tag{ display:none; }
+      .topbar{ justify-content:center; }
+      .eyebrow{ letter-spacing:0.42em; }
+      .wordmark__sub span{ letter-spacing:0.42em; }
+      .footer{
+        flex-direction:column;
+        text-align:center;
+        gap:16px;
+      }
+      .footer__quote{ order:-1; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+
+    <header class="topbar">
+      <span class="brand-label">Leaf&nbsp;Psychologie</span>
+      <span class="brand-tag">Praktijk voor Psychologie</span>
+    </header>
+
+    <section class="hero">
+      <span class="eyebrow">Binnenkort online</span>
+
+      <div class="wordmark">
+        <h1 class="wordmark__name">Lea<span>f</span></h1>
+        <div class="wordmark__sub"><span>Psychologie</span></div>
+      </div>
+
+      <p class="intro">We werken aan een rustige plek om te landen, te ademen en weer verbinding te maken met jezelf. De praktijk opent binnenkort haar deuren.</p>
+    </section>
+
+    <footer class="footer">
+      <a href="mailto:hallo@leafpsychologie.nl">hallo@leafpsychologie.nl</a>
+      <span class="footer__quote">Een veilige plek om stil te staan en te groeien.</span>
+      <span class="footer__meta">Amsterdam&nbsp;&nbsp;·&nbsp;&nbsp;op afspraak</span>
+    </footer>
+
+  </main>
+</body>
+</html>
